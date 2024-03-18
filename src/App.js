@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 import "./styles.css";
 
 const faqs = [
@@ -44,7 +44,7 @@ function Accordion({ data }) {
   );
 }
 
-function AccordionItem({ num, title, text, curOpen, onOpen, children }) {
+function AccordionItem({ num, title, curOpen, onOpen, children }) {
   const isOpen = curOpen === num;
 
   return (
